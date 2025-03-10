@@ -4,7 +4,7 @@
     <div class="page-header">
       <div class="container">
         <h1 class="page-title">服务内容</h1>
-        <p class="page-subtitle">为内容创作者提供全方位的专业服务</p>
+        <p class="page-subtitle">为呼和浩特本地商家提供专业抖音同城探店推广服务</p>
       </div>
     </div>
     
@@ -14,8 +14,8 @@
         <div class="intro-content">
           <div class="intro-text">
             <h2 class="section-title">我们的服务</h2>
-            <p>内蒙古默默文化传媒服务有限公司作为专业的MCN机构，为内容创作者提供全方位的服务支持，帮助创作者实现内容价值最大化。</p>
-            <p>我们拥有丰富的行业资源和专业的运营团队，能够为不同类型、不同阶段的创作者提供个性化的解决方案，助力创作者在激烈的内容市场中脱颖而出。</p>
+            <p>内蒙古默默文化传媒服务有限公司作为呼和浩特地区领先的抖音同城探店MCN机构，专注于为本地商家提供全方位的抖音营销解决方案。</p>
+            <p>我们拥有丰富的本地KOL资源和专业的运营团队，通过精准的内容策划和高效的运营体系，帮助呼和浩特本地商家提升品牌曝光度和客流量，实现线上引流到线下消费的转化。</p>
           </div>
           <div class="intro-image">
             <div class="image-placeholder">服务概览图</div>
@@ -52,7 +52,7 @@
     <div class="section process-section">
       <div class="container">
         <h2 class="section-title">服务流程</h2>
-        <p class="section-subtitle">专业、高效的服务流程，确保创作者获得最佳体验</p>
+        <p class="section-subtitle">专业、高效的服务流程，确保商家获得最佳营销效果</p>
         
         <div class="process-steps">
           <div class="process-step" v-for="(step, index) in processSteps" :key="index">
@@ -69,14 +69,14 @@
     <!-- 合作品牌 -->
     <div class="section brands-section">
       <div class="container">
-        <h2 class="section-title">合作品牌</h2>
-        <p class="section-subtitle">我们与众多知名品牌建立了长期稳定的合作关系</p>
+        <h2 class="section-title">合作商家</h2>
+        <p class="section-subtitle">我们已与呼和浩特众多知名本地商家建立了长期稳定的合作关系</p>
         
         <div class="brand-logos">
           <el-row :gutter="30">
             <el-col :xs="12" :sm="8" :md="4" v-for="i in 12" :key="i">
               <div class="brand-logo">
-                <div class="image-placeholder">品牌 {{ i }}</div>
+                <div class="image-placeholder">呼市商家 {{ i }}</div>
               </div>
             </el-col>
           </el-row>
@@ -88,8 +88,8 @@
     <div class="section contact-section">
       <div class="container">
         <div class="contact-card">
-          <h2>需要更多服务信息？</h2>
-          <p>如果您对我们的服务有任何疑问，或者想了解更多详情，请随时联系我们。</p>
+          <h2>想要提升店铺客流量？</h2>
+          <p>如果您是呼和浩特本地商家，希望通过抖音同城探店提升品牌曝光和客流量，请立即联系我们。</p>
           <el-button type="primary" size="large" @click="$router.push('/contact')">联系我们</el-button>
         </div>
       </div>
@@ -104,73 +104,73 @@ const services = ref([
   {
     title: '网红孵化',
     icon: 'fas fa-user-friends',
-    description: '发掘和培养有潜力的内容创作者，提供专业培训和成长指导。',
+    description: '发掘和培养呼和浩特本地有潜力的内容创作者，提供专业培训和成长指导。',
     features: [
-      '潜力创作者发掘与签约',
-      '内容创作能力培训',
-      '个人形象包装与定位',
+      '呼市本地抖音达人发掘与签约',
+      '同城探店内容创作培训',
+      '本地KOL形象包装与定位',
       '粉丝运营与互动指导',
-      '平台账号优化与成长'
+      '抖音同城账号优化与成长'
     ]
   },
   {
     title: '内容策划',
     icon: 'fas fa-lightbulb',
-    description: '为创作者提供内容创意和策划，打造爆款内容和个人IP。',
+    description: '为呼和浩特本地商家量身定制抖音同城探店内容，打造爆款视频和品牌形象。',
     features: [
-      '内容方向规划与定位',
-      '创意内容策划与制作',
-      '热点话题捕捉与应用',
-      '内容质量把控与优化',
-      '个人IP打造与维护'
+      '呼市商家抖音内容规划',
+      '同城探店创意策划与制作',
+      '本地热点话题捕捉与应用',
+      '视频质量把控与优化',
+      '商家品牌形象打造'
     ]
   },
   {
     title: '商业变现',
     icon: 'fas fa-hand-holding-usd',
-    description: '对接品牌资源，开展商业合作，实现创作者价值最大化。',
+    description: '连接呼市商家与本地KOL资源，实现线上引流到线下消费的高效转化。',
     features: [
-      '商业合作机会对接',
-      '品牌推广内容策划',
-      '商务谈判与合同管理',
-      '直播带货策划与执行',
-      '收益分析与优化'
+      '呼市商家与KOL精准匹配',
+      '同城探店内容策划',
+      '商务合作洽谈与管理',
+      '线上引流线下转化方案',
+      '效果数据分析与优化'
     ]
   },
   {
     title: '平台运营',
     icon: 'fas fa-chart-line',
-    description: '专业的账号运营和数据分析，提升粉丝互动和平台影响力。',
+    description: '专业的抖音账号运营和数据分析，提升呼市商家在同城页面的曝光和影响力。',
     features: [
-      '多平台账号运营',
-      '内容发布计划制定',
-      '粉丝互动与维护',
-      '数据分析与优化',
-      '平台算法研究与应用'
+      '抖音同城账号专业运营',
+      '探店内容发布计划制定',
+      '本地用户互动与维护',
+      '同城数据分析与优化',
+      '抖音同城算法研究应用'
     ]
   },
   {
     title: '品牌推广',
     icon: 'fas fa-bullhorn',
-    description: '为品牌提供KOL营销解决方案，精准触达目标受众。',
+    description: '为呼和浩特本地商家提供抖音同城KOL营销解决方案，精准触达目标消费者。',
     features: [
-      'KOL资源匹配与推荐',
-      '品牌营销策略制定',
-      '内容营销方案设计',
+      '呼市本地KOL资源匹配',
+      '同城品牌营销策略制定',
+      '探店内容营销方案设计',
       '营销效果监测与分析',
-      '品牌声量提升方案'
+      '本地品牌声量提升方案'
     ]
   },
   {
     title: '活动策划',
     icon: 'fas fa-calendar-alt',
-    description: '策划和执行线上线下活动，增强粉丝黏性和品牌曝光。',
+    description: '策划和执行呼市商家线上线下联动活动，增强用户互动和品牌曝光。',
     features: [
-      '线上互动活动策划',
-      '线下粉丝见面会组织',
-      '品牌发布会策划执行',
-      '跨平台联动活动',
-      '活动效果评估与总结'
+      '抖音同城线上互动活动',
+      '呼市商家线下探店活动',
+      '新店开业推广活动策划',
+      '跨平台联动推广活动',
+      '活动效果评估与优化'
     ]
   }
 ])
@@ -178,11 +178,11 @@ const services = ref([
 const processSteps = ref([
   {
     title: '需求沟通',
-    description: '深入了解创作者或品牌的需求和目标，进行初步沟通和评估。'
+    description: '深入了解呼市商家的需求和目标，进行初步沟通和评估。'
   },
   {
     title: '方案制定',
-    description: '根据需求分析，制定个性化的服务方案，包括目标、策略和执行计划。'
+    description: '根据商家特点和目标受众，制定个性化的抖音同城探店推广方案。'
   },
   {
     title: '签约合作',
@@ -198,7 +198,7 @@ const processSteps = ref([
   },
   {
     title: '持续优化',
-    description: '根据评估结果，不断优化服务内容和策略，实现长期稳定合作。'
+    description: '根据效果评估结果，持续优化推广策略，确保长期稳定的营销效果。'
   }
 ])
 </script>
@@ -396,6 +396,48 @@ const processSteps = ref([
 .brands-section {
   background-color: #f9f9f9;
   padding: 80px 0;
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 36px;
+  }
+  
+  .page-subtitle {
+    font-size: 18px;
+  }
+  
+  .intro-content {
+    flex-direction: column;
+  }
+  
+  .service-item {
+    flex-direction: column;
+  }
+  
+  .service-icon {
+    width: 100%;
+    height: 100px;
+  }
+  
+  .service-features ul {
+    grid-template-columns: 1fr;
+  }
+  
+  .process-steps::before {
+    left: 25px;
+  }
+  
+  .process-step {
+    padding-left: 60px;
+  }
+  
+  .step-number {
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
 }
 
 .brand-logos {

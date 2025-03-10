@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
 }
 
 a {
@@ -57,9 +58,8 @@ button:focus-visible {
 }
 
 #app {
-  max-width: 1280px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -73,5 +73,49 @@ button:focus-visible {
   }
   button {
     background-color: #f9f9f9;
+  }
+}
+
+/* 移动端适配通用样式 */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5em;
+  }
+  
+  h2 {
+    font-size: 1.8em;
+  }
+  
+  h3 {
+    font-size: 1.5em;
+  }
+  
+  .section {
+    padding: 40px 0;
+  }
+  
+  .section-title {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+  
+  .section-subtitle {
+    font-size: 16px;
+    margin-bottom: 25px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+}
+
+/* 提高移动端可访问性 */
+@media (max-width: 480px) {
+  button, .el-button {
+    min-height: 44px; /* 确保触摸目标足够大 */
+  }
+  
+  input, select, textarea {
+    font-size: 16px; /* 防止iOS自动缩放 */
   }
 }

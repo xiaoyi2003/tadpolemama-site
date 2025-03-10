@@ -14,7 +14,7 @@
         <div class="contact-content">
           <div class="contact-details">
             <h2 class="section-title">联系方式</h2>
-            <p class="contact-desc">如果您对我们的服务有任何疑问，或者想要了解更多合作细节，欢迎通过以下方式联系我们。</p>
+            <p class="contact-desc">如果您是呼和浩特本地商家，希望通过抖音同城探店提升品牌曝光和客流量，欢迎随时联系我们，获取专业的营销解决方案。</p>
             
             <div class="info-items">
               <div class="info-item">
@@ -70,12 +70,12 @@
           </div>
           
           <div class="contact-form-container">
-            <h2 class="section-title">在线留言</h2>
-            <p class="form-desc">请填写以下表单，我们将尽快与您联系。</p>
+            <h2 class="section-title">商家合作咨询</h2>
+            <p class="form-desc">请填写以下表单，我们的抖音同城探店推广专家将尽快与您联系。</p>
             
             <el-form :model="form" :rules="rules" ref="contactForm" label-position="top">
-              <el-form-item label="您的姓名" prop="name">
-                <el-input v-model="form.name" placeholder="请输入您的姓名"></el-input>
+              <el-form-item label="商家名称" prop="name">
+                <el-input v-model="form.name" placeholder="请输入您的商家名称"></el-input>
               </el-form-item>
               
               <el-form-item label="联系电话" prop="phone">
@@ -88,34 +88,24 @@
               
               <el-form-item label="合作意向" prop="interest">
                 <el-select v-model="form.interest" placeholder="请选择合作意向" style="width: 100%">
-                  <el-option label="网红孵化" value="网红孵化"></el-option>
-                  <el-option label="内容策划" value="内容策划"></el-option>
-                  <el-option label="商业变现" value="商业变现"></el-option>
-                  <el-option label="品牌推广" value="品牌推广"></el-option>
-                  <el-option label="活动策划" value="活动策划"></el-option>
+                  <el-option label="抖音同城探店" value="抖音同城探店"></el-option>
+                  <el-option label="KOL营销合作" value="KOL营销合作"></el-option>
+                  <el-option label="品牌推广活动" value="品牌推广活动"></el-option>
+                  <el-option label="短视频内容制作" value="短视频内容制作"></el-option>
+                  <el-option label="线上线下活动策划" value="线上线下活动策划"></el-option>
                   <el-option label="其他合作" value="其他合作"></el-option>
                 </el-select>
               </el-form-item>
               
               <el-form-item label="留言内容" prop="message">
-                <el-input type="textarea" v-model="form.message" placeholder="请输入您的留言内容" :rows="5"></el-input>
+                <el-input type="textarea" v-model="form.message" rows="5" placeholder="请简要描述您的需求和期望"></el-input>
               </el-form-item>
               
               <el-form-item>
-                <el-button type="primary" @click="submitForm" size="large" style="width: 100%">提交留言</el-button>
+                <el-button type="primary" size="large">提交咨询</el-button>
               </el-form-item>
             </el-form>
           </div>
-        </div>
-      </div>
-    </div>
-    
-    <!-- 公司地图 -->
-    <div class="section map-section">
-      <div class="container">
-        <h2 class="section-title">公司位置</h2>
-        <div class="map-container">
-          <div class="map-placeholder">地图加载中...</div>
         </div>
       </div>
     </div>
@@ -124,18 +114,16 @@
     <div class="section faq-section">
       <div class="container">
         <h2 class="section-title">常见问题</h2>
-        <p class="section-subtitle">关于我们服务的常见问题解答</p>
-        
-        <div class="faq-list">
+        <div class="faq-content">
           <el-collapse>
-            <el-collapse-item title="如何与贵公司建立合作关系？" name="1">
-              <div>您可以通过本页面的联系方式与我们取得联系，或者填写在线留言表单，我们的商务团队会尽快与您联系，了解您的需求并提供合作方案。</div>
+            <el-collapse-item title="抖音同城探店能给商家带来哪些好处？" name="1">
+              <div>抖音同城探店可以帮助呼和浩特本地商家提升品牌曝光度，增加店铺客流量，提高销售转化率。通过专业KOL真实体验和推荐，能够建立消费者信任，吸引更多潜在客户。</div>
             </el-collapse-item>
-            <el-collapse-item title="贵公司的服务范围有哪些？" name="2">
-              <div>我们提供网红孵化、内容策划、商业变现、平台运营、品牌推广和活动策划等全方位MCN服务，可以根据客户需求提供定制化解决方案。</div>
+            <el-collapse-item title="贵公司提供哪些服务？" name="2">
+              <div>我们提供抖音同城探店、KOL营销、内容策划、商业变现、平台运营、品牌推广和活动策划等全方位MCN服务，可以根据呼和浩特本地商家需求提供定制化解决方案。</div>
             </el-collapse-item>
             <el-collapse-item title="如何选择适合的艺人进行合作？" name="3">
-              <div>我们会根据您的品牌调性、目标受众和营销目标，为您推荐最适合的艺人资源，并提供专业的匹配建议，确保合作效果最大化。</div>
+              <div>我们会根据您的商家类型、目标受众和营销目标，为您推荐最适合的呼和浩特本地KOL资源，并提供专业的匹配建议，确保合作效果最大化。</div>
             </el-collapse-item>
             <el-collapse-item title="合作流程是怎样的？" name="4">
               <div>一般包括需求沟通、方案制定、签约合作、执行实施、效果评估和持续优化六个步骤，我们会全程跟进，确保合作顺利进行。</div>
