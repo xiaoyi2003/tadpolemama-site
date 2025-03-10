@@ -116,6 +116,7 @@ onUnmounted(() => {
     flex-direction: column;
     height: auto;
     padding: 0;
+    position: relative;
   }
 
   .logo-container {
@@ -131,12 +132,22 @@ onUnmounted(() => {
     font-size: 24px;
     color: #409EFF;
     cursor: pointer;
+    z-index: 1001;
   }
 
   .menu-items {
     display: none;
-    width: 100%;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background-color: #fff;
     flex-direction: column;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    padding-top: 80px;
+    z-index: 999;
   }
 
   .menu-items.mobile {
@@ -145,12 +156,14 @@ onUnmounted(() => {
 
   .menu-items.mobile.open {
     display: flex;
+    right: 0;
   }
 
   .menu-items .el-menu-item {
     margin-left: 0;
     width: 100%;
     text-align: left;
+    border-bottom: 1px solid #f0f0f0;
   }
 }
 </style>
