@@ -4,7 +4,7 @@
     <div class="page-header">
       <div class="container">
         <h1 class="page-title">案例展示</h1>
-        <p class="page-subtitle">呼和浩特本地商家抖音同城探店成功案例</p>
+        <p class="page-subtitle">一些真实的服务案例</p>
       </div>
     </div>
     
@@ -14,10 +14,10 @@
         <div class="filter-tabs">
           <el-radio-group v-model="activeCategory" size="large">
             <el-radio-button label="all">全部案例</el-radio-button>
-            <el-radio-button label="kol">网红探店</el-radio-button>
-            <el-radio-button label="brand">品牌推广</el-radio-button>
-            <el-radio-button label="event">活动策划</el-radio-button>
-            <el-radio-button label="content">内容创作</el-radio-button>
+            <el-radio-button label="kol">月子中心</el-radio-button>
+            <el-radio-button label="brand">月嫂平台</el-radio-button>
+            <!-- <el-radio-button label="event"></el-radio-button>
+            <el-radio-button label="content"></el-radio-button> -->
           </el-radio-group>
         </div>
       </div>
@@ -70,23 +70,23 @@
         </div>
         
         <div class="case-detail-content">
-          <h3>项目背景</h3>
+          <h3>客户背景</h3>
           <p>{{ selectedCase.background }}</p>
           
-          <h3>项目目标</h3>
+          <h3>项遇到的问题</h3>
           <p>{{ selectedCase.goal }}</p>
           
-          <h3>执行方案</h3>
+          <h3>服务方案</h3>
           <p>{{ selectedCase.solution }}</p>
           
-          <h3>项目成果</h3>
+          <h3>结果与反馈</h3>
           <p>{{ selectedCase.result }}</p>
         </div>
       </div>
     </el-dialog>
     
     <!-- 合作流程 -->
-    <div class="section cooperation-section">
+    <!-- <div class="section cooperation-section">
       <div class="container">
         <h2 class="section-title">合作流程</h2>
         <p class="section-subtitle">专业高效的项目执行流程，确保合作成功</p>
@@ -105,14 +105,14 @@
           </el-row>
         </div>
       </div>
-    </div>
+    </div> -->
     
     <!-- 联系我们 -->
     <div class="section contact-section">
       <div class="container">
         <div class="contact-card">
           <h2>想要了解更多案例？</h2>
-          <p>如果您对我们的案例有兴趣，或者想要了解更多合作细节，请随时联系我们。</p>
+          <p></p>
           <el-button type="primary" size="large" @click="$router.push('/contact')">联系我们</el-button>
         </div>
       </div>
@@ -130,69 +130,65 @@ const selectedCase = ref(null)
 const cases = ref([
   {
     id: 1,
-    title: '呼市知名火锅店抖音探店推广',
+    title: '初为人母的温馨守护',
     category: 'kol',
-    summary: '通过抖音同城探店内容，帮助呼和浩特知名火锅店提升品牌曝光和客流量，实现销售额显著增长。',
-    date: '2023-05-15',
-    background: '呼和浩特市知名火锅店希望通过抖音同城探店提升品牌知名度，吸引更多年轻消费群体。',
-    goal: '通过与当地有影响力的美食博主合作，提高品牌在年轻消费群体中的认知度，增加门店客流量。',
-    solution: '我们为商家匹配了3位在呼和浩特地区有较高影响力的美食博主，策划了一系列探店体验、美食评测和直播活动，通过真实体验分享增强用户信任。',
-    result: '合作期间，商家抖音账号粉丝增长200%，门店日均客流量提升35%，周末需要提前两天预约，品牌在年轻人群中的知名度显著提高。'
+    summary: '张女士是一位第一次当妈妈的年轻客户，在生产后出现了情绪波动和哺乳困难。入住我们月子中心后，护理团队为她制定了专属的产后恢复方案。',
+    date: '2025-05-15',
+    background: '',
+    goal: '',
+    solution: '',
+    result: ''
   },
   {
     id: 2,
-    title: '呼市商圈购物节抖音推广活动',
-    category: 'event',
-    summary: '为呼和浩特本地商圈策划并执行抖音同城购物节推广活动，带动整体客流量提升40%。',
-    date: '2023-07-20',
-    background: '呼和浩特市某大型商圈希望通过抖音同城活动提升整体客流量，带动商户销售增长。',
-    goal: '通过创新的内容形式和多KOL联动，提升商圈知名度，吸引更多消费者到店消费。',
-    solution: '我们组织了15位不同领域的呼市本地抖音达人，进行为期7天的商圈探店活动，创作了一系列短视频、图文和直播内容，全方位展示商圈魅力。',
-    result: '活动内容总曝光量超过300万，带动商圈客流量提升40%，参与商户销售额平均增长25%，成功打造了商圈在抖音平台的品牌影响力。'
-  },
-  {
-    id: 3,
-    title: '呼市新开奶茶店抖音引流案例',
+    title: '二胎妈妈的科学照护',
     category: 'brand',
-    summary: '为呼和浩特新开奶茶店打造抖音同城引流方案，开业首月实现日均销售500杯。',
-    date: '2023-09-10',
-    background: '呼和浩特市新开奶茶品牌希望通过抖音同城营销快速打开市场，建立品牌知名度。',
-    goal: '通过抖音同城探店内容，迅速提高品牌在目标消费群体中的认知度，带动开业期间的客流和销量。',
-    solution: '我们为奶茶店定制了包括KOL探店、产品测评、开业活动策划和抖音话题挑战在内的整合营销方案。',
-    result: '开业首月，品牌抖音账号粉丝突破5万，门店日均销售超过500杯，多款产品成为网红爆款，品牌迅速在呼市年轻人群中建立了知名度。'
+    summary: '',
+    date: '2025-07-20',
+    background: '',
+    goal: '',
+    solution: '',
+    result: ''
   },
   {
-    id: 4,
-    title: '呼市健身房会员招募计划',
-    category: 'content',
-    summary: '通过抖音同城内容营销，帮助呼和浩特本地健身房在一个月内新增会员100+。',
-    date: '2023-11-05',
-    background: '呼和浩特市某连锁健身房希望通过抖音同城内容吸引更多潜在会员，提升会员转化率。',
-    goal: '通过专业、有吸引力的健身内容，展示健身房的环境和服务，吸引目标用户到店体验并办理会员。',
-    solution: '我们邀请了5位呼市本地健身领域KOL入驻健身房，创作一系列健身教学、器械使用和健身房环境展示的短视频内容，并策划了线上健身挑战活动。',
-    result: '一个月内，健身房抖音账号涨粉2万+，到店体验人数增加200%，新增会员100+，会员转化率提升30%，成功建立了专业、年轻化的品牌形象。'
+           id: 3,
+    title: '',
+    category: 'brand',
+    summary: '',
+    date: '',
+    background: '',
+    solution: '',
+    result: ''
   },
   {
-    id: 5,
-    title: '呼市特色餐厅线上线下联动',
-    category: 'kol',
-    summary: '为呼和浩特特色蒙餐餐厅策划抖音同城探店活动，带动周末客流量翻倍增长。',
-    date: '2024-01-15',
-    background: '呼和浩特市一家特色蒙餐餐厅希望通过抖音同城探店提升品牌影响力，吸引更多外地游客和本地年轻人。',
-    goal: '通过展示餐厅特色菜品和民族文化氛围，提升品牌在抖音平台的曝光度，增加客流量和销售额。',
-    solution: '我们邀请了8位呼市本地美食、旅游和生活领域KOL进行探店体验，重点展示餐厅特色菜品和民族文化元素，并策划了线下互动活动。',
-    result: '合作期间，餐厅相关抖音内容累计播放量超过200万，周末客流量翻倍增长，特色菜品销量提升60%，成功吸引了大量外地游客前来打卡。'
+           id: 4,
+    title: '',
+    category: 'brand',
+    summary: '',
+    date: '',
+    background: '',
+    solution: '',
+    result: ''
+  },
+  {
+       id: 5,
+    title: '',
+    category: 'brand',
+    summary: '',
+    date: '',
+    background: '',
+    solution: '',
+    result: ''
   },
   {
     id: 6,
-    title: '呼市美容院会员回流计划',
+    title: '',
     category: 'brand',
-    summary: '通过抖音同城内容营销，帮助呼和浩特本地美容院激活沉睡会员，提升复购率40%。',
-    date: '2024-02-20',
-    background: '呼和浩特市某高端美容院面临会员活跃度下降的问题，希望通过抖音同城内容重新激活沉睡会员并吸引新客户。',
-    goal: '通过专业、有吸引力的美容内容，重新唤起沉睡会员的兴趣，同时吸引新客户，提升整体营业额。',
-    solution: '我们为美容院策划了一系列美容知识分享、护肤技巧和新项目展示的短视频内容，邀请3位呼市本地美妆KOL进行项目体验和真实评测。',
-    result: '两个月内，沉睡会员激活率达到35%，会员复购率提升40%，新增会员60+，美容院月营业额提升25%，成功重塑了品牌形象。'
+    summary: '',
+    date: '',
+    background: '',
+    solution: '',
+    result: ''
   }
 ])
 
@@ -238,10 +234,10 @@ const handleClose = () => {
 
 const getCategoryName = (category) => {
   const categoryMap = {
-    'kol': '网红合作',
-    'brand': '品牌推广',
-    'event': '活动策划',
-    'content': '内容创作'
+    'kol': '月子中心',
+    'brand': '月嫂平台',
+    'event': '',
+    'content': ''
   }
   return categoryMap[category] || '其他'
 }

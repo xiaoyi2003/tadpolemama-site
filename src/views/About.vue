@@ -4,29 +4,46 @@
     <div class="page-header">
       <div class="container">
         <h1 class="page-title">关于我们</h1>
-        <p class="page-subtitle">内蒙古默默文化传媒服务有限公司</p>
+        <p class="page-subtitle">Tadpolemama 母婴</p>
       </div>
     </div>
     
     <!-- 公司简介 -->
-    <div class="section company-intro">
+
+    
+        <div class="section company-intro">
       <div class="container">
         <div class="intro-content">
           <div class="intro-text">
-            <h2 class="section-title">公司简介</h2>
-            <p>内蒙古默默文化传媒服务有限公司成立于2018年，是内蒙古地区领先的MCN机构，专注于内容创作者的发掘、培养和商业变现。</p>
-            <p>我们致力于连接创作者与品牌，打造优质内容，为创作者提供全方位的孵化、运营和商业变现服务。通过专业的团队和丰富的行业资源，我们帮助创作者实现内容价值最大化。</p>
-            <p>公司总部位于呼和浩特市，业务覆盖全内蒙古自治区及周边地区，拥有丰富的本土文化资源和广泛的行业合作伙伴。</p>
+            <h2 class="section-title">品牌故事</h2>
+            <p>Tadpolemama 的创始人李女士曾在自己产后护理过程中，发现市面上缺乏真正专业又贴心的母婴护理服务。</p>
+            <p>她希望每位妈妈都能得到全面的关爱，每个宝宝都能健康成长。于是，她组建了 Tadpolemama 团队，从选拔培训月嫂、设计个性化护理方案到提供科学饮食与生活指导，力求为母婴家庭打造最安心、温暖的护理体验。</p>
+            <p>Tadpolemama 的每一位成员都秉承“专业、温暖、守护”的理念，把每一个家庭当作自己的家，用心服务每一位妈妈和宝宝。</p>
           </div>
           <div class="intro-image">
-            <div class="image-placeholder">公司形象图</div>
+            <div class="image-placeholder">品牌logo</div>
           </div>
         </div>
       </div>
     </div>
-    
+    <!-- 创始人介绍 -->
+        <div class="section company-intro">
+      <div class="container">
+        <div class="intro-content">
+          <div class="intro-text">
+            <h2 class="section-title">创始人介绍</h2>
+            <p>于女士</p>
+            <p>于女士拥有多年母婴护理和产后康复经验，是 Tadpolemama 的创始人兼负责人。她曾在自己的产后护理过程中，深刻体会到专业、贴心护理的重要性。为了让每位妈妈和宝宝都能获得科学、全面的照护，她创立了 Tadpolemama，组建了一支经验丰富、专业可靠的月嫂团队。</p>
+            <p>于女士注重团队培训和服务质量，倡导“专业、温暖、守护”的理念，致力于为母婴家庭打造温馨、安全、科学的护理体验。</p>
+          </div>
+          <div class="intro-image">
+            <div class="image-placeholder">照片</div>
+          </div>
+        </div>
+      </div>
+    </div>
     <!-- 企业文化 -->
-    <div class="section company-culture">
+    <!-- <div class="section company-culture">
       <div class="container">
         <h2 class="section-title">企业文化</h2>
         <div class="culture-content">
@@ -53,10 +70,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
     <!-- 发展历程 -->
-    <div class="section company-history">
+    <!-- <div class="section company-history">
       <div class="container">
         <h2 class="section-title">发展历程</h2>
         <div class="timeline">
@@ -104,10 +121,10 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
     <!-- 团队介绍 -->
-    <div class="section team-section">
+    <!-- <div class="section team-section">
       <div class="container">
         <h2 class="section-title">核心团队</h2>
         <p class="section-subtitle">专业的团队是我们最大的财富</p>
@@ -129,7 +146,7 @@
           </el-row>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -138,6 +155,23 @@
 </script>
 
 <style scoped>
+
+.about-page {
+  overflow-x: hidden;
+  background-color: #ffffff; /* 设置整体页面背景为白色 */
+  color: #333; /* 文字颜色避免太淡 */
+}
+
+.image-placeholder {
+  background-color: #f0f0f0; /* 占位图区域改成浅灰，不会黑色 */
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  border-radius: 8px;
+}
+
 .about-page {
   overflow-x: hidden;
 }
@@ -167,16 +201,19 @@
   gap: 40px;
   align-items: center;
   margin-bottom: 40px;
+  
 }
 
 .intro-text {
   flex: 1;
+  
 }
 
 .intro-text p {
   margin-bottom: 20px;
   line-height: 1.8;
   font-size: 16px;
+  color: hsl(0, 59%, 46%); 
 }
 
 .intro-image {

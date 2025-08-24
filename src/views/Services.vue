@@ -3,8 +3,8 @@
     <!-- 页面标题 -->
     <div class="page-header">
       <div class="container">
-        <h1 class="page-title">服务内容</h1>
-        <p class="page-subtitle">为呼和浩特本地商家提供专业抖音同城探店推广服务</p>
+        <h1 class="page-title">Tadpolemama月子中心</h1>
+        <p class="page-subtitle">我们用专业与关爱，陪伴每一位新手妈妈与宝宝，度过温馨而安心的月子时光。</p>
       </div>
     </div>
     
@@ -13,12 +13,15 @@
       <div class="container">
         <div class="intro-content">
           <div class="intro-text">
-            <h2 class="section-title">我们的服务</h2>
-            <p>内蒙古默默文化传媒服务有限公司作为呼和浩特地区领先的抖音同城探店MCN机构，专注于为本地商家提供全方位的抖音营销解决方案。</p>
-            <p>我们拥有丰富的本地KOL资源和专业的运营团队，通过精准的内容策划和高效的运营体系，帮助呼和浩特本地商家提升品牌曝光度和客流量，实现线上引流到线下消费的转化。</p>
+            <h2 class="section-title">环境介绍</h2>
+            <p>Tadpolemama 月子中心 坐落于城市优质生活区，环境清幽、交通便利。这里不仅为产后妈妈和新生儿提供舒适的居住环境，更拥有完善的周边配套，方便家人探访与日常生活。</p>
+            <p>交通便利：紧邻地铁与公交站点，家人探访方便快捷，减少舟车劳顿。
+              医疗资源丰富：周边有三甲医院及专业儿科医疗机构，确保妈妈和宝宝在特殊情况下能够第一时间得到医疗支持。
+              活设施齐全：附近商场、超市、药房一应俱全，家属生活无忧。
+              自然环境优越：月子中心周围绿化率高，毗邻城市公园和湖景区域，空气清新，有利于妈妈身心放松与产后恢复。</p>
           </div>
           <div class="intro-image">
-            <div class="image-placeholder">服务概览图</div>
+            <div class="image-placeholder">环境照片</div>
           </div>
         </div>
       </div>
@@ -48,8 +51,8 @@
       </div>
     </div>
     
-    <!-- 服务流程 -->
-    <div class="section process-section">
+    <!--  -->
+    <!-- <div class="section process-section">
       <div class="container">
         <h2 class="section-title">服务流程</h2>
         <p class="section-subtitle">专业、高效的服务流程，确保商家获得最佳营销效果</p>
@@ -64,19 +67,19 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     
     <!-- 合作品牌 -->
     <div class="section brands-section">
       <div class="container">
         <h2 class="section-title">合作商家</h2>
-        <p class="section-subtitle">我们已与呼和浩特众多知名本地商家建立了长期稳定的合作关系</p>
+        <p class="section-subtitle">我们已与众多知名本地商家建立了长期稳定的合作关系</p>
         
         <div class="brand-logos">
           <el-row :gutter="30">
             <el-col :xs="12" :sm="8" :md="4" v-for="i in 12" :key="i">
               <div class="brand-logo">
-                <div class="image-placeholder">呼市商家 {{ i }}</div>
+                <div class="image-placeholder"> {{ i }}</div>
               </div>
             </el-col>
           </el-row>
@@ -88,8 +91,8 @@
     <div class="section contact-section">
       <div class="container">
         <div class="contact-card">
-          <h2>想要提升店铺客流量？</h2>
-          <p>如果您是呼和浩特本地商家，希望通过抖音同城探店提升品牌曝光和客流量，请立即联系我们。</p>
+          <h2></h2>
+          <p></p>
           <el-button type="primary" size="large" @click="$router.push('/contact')">联系我们</el-button>
         </div>
       </div>
@@ -97,80 +100,180 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue'
+
+<!-- 套餐介绍 -->
+ <!-- <script setup>
+import { ref } from 'vue'  
 
 const services = ref([
   {
-    title: '网红孵化',
-    icon: 'fas fa-user-friends',
-    description: '发掘和培养呼和浩特本地有潜力的内容创作者，提供专业培训和成长指导。',
+    title: '产妇护理服务',
+    // icon: 'fas fa-user-friends',
+    description: '',
     features: [
-      '呼市本地抖音达人发掘与签约',
-      '同城探店内容创作培训',
-      '本地KOL形象包装与定位',
-      '粉丝运营与互动指导',
-      '抖音同城账号优化与成长'
+      '产后恢复指导（盆底修复、形体恢复、伤口护理）',
+      '产后饮食营养配餐（科学月子餐）',
+      '情绪关怀与心理疏导（产后抑郁预防）',
+      '乳房护理与母乳喂养指导',
+  
     ]
   },
   {
-    title: '内容策划',
-    icon: 'fas fa-lightbulb',
-    description: '为呼和浩特本地商家量身定制抖音同城探店内容，打造爆款视频和品牌形象。',
+    title: '新生儿护理服务',
+    // icon: 'fas fa-lightbulb',
+    description: '',
     features: [
-      '呼市商家抖音内容规划',
-      '同城探店创意策划与制作',
-      '本地热点话题捕捉与应用',
-      '视频质量把控与优化',
-      '商家品牌形象打造'
+      '新生儿日常照护（洗澡、抚触、喂养、排泄）',
+      '黄疸观察与护理',
+      '新生儿睡眠训练与安全指导',
+      '新生儿常见疾病的早期识别',
+      
     ]
   },
   {
-    title: '商业变现',
-    icon: 'fas fa-hand-holding-usd',
-    description: '连接呼市商家与本地KOL资源，实现线上引流到线下消费的高效转化。',
+    title: '健康监测服务',
+    // icon: 'fas fa-hand-holding-usd',
+    description: '',
     features: [
-      '呼市商家与KOL精准匹配',
-      '同城探店内容策划',
-      '商务合作洽谈与管理',
-      '线上引流线下转化方案',
-      '效果数据分析与优化'
+      '产妇定期体检（体温、血压、恢复情况）',
+      '新生儿健康监测（体重、黄疸、发育情况）',
+      '提供专业医生巡诊或合作医院转诊',
+     
     ]
   },
   {
-    title: '平台运营',
-    icon: 'fas fa-chart-line',
-    description: '专业的抖音账号运营和数据分析，提升呼市商家在同城页面的曝光和影响力。',
+    title: '营养与饮食服务',
+    // icon: 'fas fa-chart-line',
+    description: '',
     features: [
-      '抖音同城账号专业运营',
-      '探店内容发布计划制定',
-      '本地用户互动与维护',
-      '同城数据分析与优化',
-      '抖音同城算法研究应用'
+      '定制化月子餐（分阶段科学搭配）',
+      '针对不同体质的食疗调理',
+      '健康饮品与中医养生汤品',
+   
     ]
   },
   {
-    title: '品牌推广',
-    icon: 'fas fa-bullhorn',
-    description: '为呼和浩特本地商家提供抖音同城KOL营销解决方案，精准触达目标消费者。',
+    title: '休养与环境服务',
+    // icon: 'fas fa-bullhorn',
+    description: '',
     features: [
-      '呼市本地KOL资源匹配',
-      '同城品牌营销策略制定',
-      '探店内容营销方案设计',
-      '营销效果监测与分析',
-      '本地品牌声量提升方案'
+      '高品质住宿环境（单间/套房，安全舒适）',
+      '母婴同室或婴儿单独托管选择',
+      '专属安静空间与安全消毒系统',
+ 
     ]
   },
   {
-    title: '活动策划',
-    icon: 'fas fa-calendar-alt',
-    description: '策划和执行呼市商家线上线下联动活动，增强用户互动和品牌曝光。',
+    title: '特色增值服务',
+    // icon: 'fas fa-calendar-alt',
+    description: '',
     features: [
-      '抖音同城线上互动活动',
-      '呼市商家线下探店活动',
-      '新店开业推广活动策划',
-      '跨平台联动推广活动',
-      '活动效果评估与优化'
+      '宝宝摄影与成长记录',
+      '家庭育儿课程（父母课堂）',
+      '上门月嫂或延伸服务（出月子后继续护理）',
+      '产后康复项目（瑜伽、轻运动、保健）',
+    ]
+  }
+])
+
+const processSteps = ref([
+  {
+    title: '需求沟通',
+    description: '深入了解呼市商家的需求和目标，进行初步沟通和评估。'
+  },
+  {
+    title: '方案制定',
+    description: '根据商家特点和目标受众，制定个性化的抖音同城探店推广方案。'
+  },
+  {
+    title: '签约合作',
+    description: '确认服务内容和合作细节，签订合作协议，明确双方权责。'
+  },
+  {
+    title: '执行实施',
+    description: '专业团队按计划执行各项工作，定期沟通进度和调整优化方向。'
+  },
+  {
+    title: '效果评估',
+    description: '对服务效果进行全面评估和数据分析，提供详细的效果报告。'
+  },
+  {
+    title: '持续优化',
+    description: '根据效果评估结果，持续优化推广策略，确保长期稳定的营销效果。'
+  }
+])
+</script> -->
+<!-- 服务介绍 -->
+<script setup>
+import { ref } from 'vue'  
+
+const services = ref([
+  {
+    title: '产妇护理服务',
+    // icon: 'fas fa-user-friends',
+    description: '',
+    features: [
+      '产后恢复指导（盆底修复、形体恢复、伤口护理）',
+      '产后饮食营养配餐（科学月子餐）',
+      '情绪关怀与心理疏导（产后抑郁预防）',
+      '乳房护理与母乳喂养指导',
+  
+    ]
+  },
+  {
+    title: '新生儿护理服务',
+    // icon: 'fas fa-lightbulb',
+    description: '',
+    features: [
+      '新生儿日常照护（洗澡、抚触、喂养、排泄）',
+      '黄疸观察与护理',
+      '新生儿睡眠训练与安全指导',
+      '新生儿常见疾病的早期识别',
+      
+    ]
+  },
+  {
+    title: '健康监测服务',
+    // icon: 'fas fa-hand-holding-usd',
+    description: '',
+    features: [
+      '产妇定期体检（体温、血压、恢复情况）',
+      '新生儿健康监测（体重、黄疸、发育情况）',
+      '提供专业医生巡诊或合作医院转诊',
+     
+    ]
+  },
+  {
+    title: '营养与饮食服务',
+    // icon: 'fas fa-chart-line',
+    description: '',
+    features: [
+      '定制化月子餐（分阶段科学搭配）',
+      '针对不同体质的食疗调理',
+      '健康饮品与中医养生汤品',
+   
+    ]
+  },
+  {
+    title: '休养与环境服务',
+    // icon: 'fas fa-bullhorn',
+    description: '',
+    features: [
+      '高品质住宿环境（单间/套房，安全舒适）',
+      '母婴同室或婴儿单独托管选择',
+      '专属安静空间与安全消毒系统',
+ 
+    ]
+  },
+  {
+    title: '特色增值服务',
+    // icon: 'fas fa-calendar-alt',
+    description: '',
+    features: [
+      '宝宝摄影与成长记录',
+      '家庭育儿课程（父母课堂）',
+      '上门月嫂或延伸服务（出月子后继续护理）',
+      '产后康复项目（瑜伽、轻运动、保健）',
     ]
   }
 ])

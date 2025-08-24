@@ -14,7 +14,7 @@
         <div class="contact-content">
           <div class="contact-details">
             <h2 class="section-title">联系方式</h2>
-            <p class="contact-desc">如果您是呼和浩特本地商家，希望通过抖音同城探店提升品牌曝光和客流量，欢迎随时联系我们，获取专业的营销解决方案。</p>
+            <p class="contact-desc"></p>
             
             <div class="info-items">
               <div class="info-item">
@@ -23,7 +23,7 @@
                 </div>
                 <div class="info-content">
                   <h3>公司地址</h3>
-                  <p>内蒙古自治区呼和浩特市赛罕区</p>
+                  <p>美国旧金山</p>
                 </div>
               </div>
               
@@ -33,7 +33,7 @@
                 </div>
                 <div class="info-content">
                   <h3>联系电话</h3>
-                  <p>400-123-4567</p>
+                  <p>000-000-0000</p>
                 </div>
               </div>
               
@@ -43,7 +43,7 @@
                 </div>
                 <div class="info-content">
                   <h3>电子邮箱</h3>
-                  <p>contact@nmgmcn.com</p>
+                  <p>x844650@gmail.com</p>
                 </div>
               </div>
               
@@ -62,7 +62,7 @@
               <h3>关注我们</h3>
               <div class="social-icons">
                 <a href="#" class="social-icon"><i class="fab fa-weixin"></i></a>
-                <a href="#" class="social-icon"><i class="fab fa-weibo"></i></a>
+                <!-- <a href="#" class="social-icon"><i class="fab fa-weibo"></i></a> -->
                 <a href="#" class="social-icon"><i class="fab fa-tiktok"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-bilibili"></i></a>
               </div>
@@ -70,12 +70,12 @@
           </div>
           
           <div class="contact-form-container">
-            <h2 class="section-title">商家合作咨询</h2>
-            <p class="form-desc">请填写以下表单，我们的抖音同城探店推广专家将尽快与您联系。</p>
+            <h2 class="section-title">预约填写表</h2>
+            <p class="form-desc">请填写以下表单，我们将尽快与您联系。</p>
             
             <el-form :model="form" :rules="rules" ref="contactForm" label-position="top">
-              <el-form-item label="商家名称" prop="name">
-                <el-input v-model="form.name" placeholder="请输入您的商家名称"></el-input>
+              <el-form-item label="姓名" prop="name">
+                <el-input v-model="form.name" placeholder="请输入您的姓名"></el-input>
               </el-form-item>
               
               <el-form-item label="联系电话" prop="phone">
@@ -86,23 +86,23 @@
                 <el-input v-model="form.email" placeholder="请输入您的电子邮箱"></el-input>
               </el-form-item>
               
-              <el-form-item label="合作意向" prop="interest">
-                <el-select v-model="form.interest" placeholder="请选择合作意向" style="width: 100%">
-                  <el-option label="抖音同城探店" value="抖音同城探店"></el-option>
-                  <el-option label="KOL营销合作" value="KOL营销合作"></el-option>
-                  <el-option label="品牌推广活动" value="品牌推广活动"></el-option>
-                  <el-option label="短视频内容制作" value="短视频内容制作"></el-option>
-                  <el-option label="线上线下活动策划" value="线上线下活动策划"></el-option>
-                  <el-option label="其他合作" value="其他合作"></el-option>
+              <el-form-item label="服务选择" prop="interest">
+                <el-select v-model="form.interest" placeholder="请选择服务类型" style="width: 100%">
+                  <el-option label="月嫂服务" value="月嫂服务"></el-option>
+                  <el-option label="产后康复" value="产后康复"></el-option>
+                  <el-option label="健康检测" value="健康检测"></el-option>
+                  <el-option label="月子餐" value="月子餐"></el-option>
+                  <el-option label="" value=""></el-option>
+                  <el-option label="" value=""></el-option>
                 </el-select>
               </el-form-item>
               
-              <el-form-item label="留言内容" prop="message">
+              <el-form-item label="备注内容" prop="message">
                 <el-input type="textarea" v-model="form.message" rows="5" placeholder="请简要描述您的需求和期望"></el-input>
               </el-form-item>
               
               <el-form-item>
-                <el-button type="primary" size="large">提交咨询</el-button>
+                <el-button type="primary" size="large">提交预约</el-button>
               </el-form-item>
             </el-form>
           </div>
@@ -111,7 +111,7 @@
     </div>
     
     <!-- 常见问题 -->
-    <div class="section faq-section">
+    <!-- <div class="section faq-section">
       <div class="container">
         <h2 class="section-title">常见问题</h2>
         <div class="faq-content">
@@ -134,7 +134,7 @@
           </el-collapse>
         </div>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

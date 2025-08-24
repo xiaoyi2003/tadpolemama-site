@@ -2,12 +2,12 @@
   <div class="home">
     <!-- 轮播图部分 -->
     <div class="banner">
-      <el-carousel height="500px">
+      <el-carousel height="500px" :autoplay="false">
         <el-carousel-item v-for="item in 3" :key="item">
           <div class="carousel-content" :class="`carousel-bg-${item}`">
             <div class="carousel-text">
-              <h2>内蒙古默默文化传媒</h2>
-              <p>呼和浩特抖音同城探店领先MCN机构，助力本地商家品牌增长</p>
+              <h2>Tadpolemama 母婴</h2>
+              <p>给宝宝与妈妈最温暖的呵护</p>
               <el-button type="primary" size="large" @click="$router.push('/contact')">联系我们</el-button>
             </div>
           </div>
@@ -19,12 +19,15 @@
     <div class="section about-section">
       <div class="container">
         <h2 class="section-title">关于我们</h2>
-        <p class="section-subtitle">内蒙古默默文化传媒服务有限公司是呼和浩特地区领先的抖音同城探店MCN机构</p>
+        <p class="section-subtitle">Tadpolemama 致力于为母婴家庭提供专业、贴心的护理服务。</p>
         
         <div class="about-content">
           <div class="about-text">
-            <p>内蒙古默默文化传媒服务有限公司致力于为呼和浩特本地商家提供专业的抖音同城探店推广服务，拥有大量优质本地KOL资源和丰富的商家合作经验。我们通过精准的内容策划和高效的运营体系，帮助本地商家提升品牌曝光度和客流量，实现线上引流到线下消费的转化。</p>
-            <el-button type="primary" plain @click="$router.push('/about')">了解更多</el-button>
+            <p>我们拥有经验丰富的月嫂团队，结合科学的母婴护理方案，
+          关注每一位妈妈和宝宝的健康与幸福。
+          从产后护理到新生儿照护，我们用专业守护每一个家庭的温暖与安心。
+          Tadpolemama，让母爱与专业同行。</p>
+             <el-button type="primary" plain @click="$router.push('/about')">了解更多</el-button>
           </div>
           <div class="about-image">
             <div class="image-placeholder">公司形象图</div>
@@ -37,7 +40,7 @@
     <div class="section service-section">
       <div class="container">
         <h2 class="section-title">我们的服务</h2>
-        <p class="section-subtitle">为呼和浩特本地商家提供全方位的抖音营销服务</p>
+        <p class="section-subtitle">Tadpolemama 提供全面、专业的母婴护理服务，覆盖产前、产后及新生儿照护各个环节。</p>
         
         <div class="service-cards">
           <el-row :gutter="30">
@@ -62,19 +65,19 @@
     <!-- 案例展示 -->
     <div class="section case-section">
       <div class="container">
-        <h2 class="section-title">成功案例</h2>
-        <p class="section-subtitle">我们的合作伙伴取得的成就</p>
+        <h2 class="section-title">客户案例反馈</h2>
+        <p class="section-subtitle"></p>
         
         <div class="case-gallery">
           <el-row :gutter="20">
             <el-col :xs="24" :sm="12" :md="8" v-for="i in 6" :key="i">
               <div class="case-item">
                 <div class="case-image">
-                  <div class="image-placeholder">呼市商家案例 {{ i }}</div>
+                  <div class="image-placeholder">客户反馈案例 {{ i }}</div>
                 </div>
                 <div class="case-info">
-                  <h3>呼市{{ ['餐饮', '美妆', '服饰', '娱乐', '健身', '教育'][i-1] }}商家推广案例</h3>
-                  <p>通过抖音同城探店内容，帮助商家提升品牌曝光和客流量，实现业绩显著增长。</p>
+                  <h3>{{ ['旧金山张女士', '纽约李小姐', '洛杉矶王先生', '芝加哥刘女士', '休斯顿陈先生', '旧金山赵小姐'][i-1] }}案例</h3>
+                  <p></p>
                 </div>
               </div>
             </el-col>
@@ -88,7 +91,7 @@
     </div>
 
     <!-- 数据统计 -->
-    <div class="section stats-section">
+    <!-- <div class="section stats-section">
       <div class="container">
         <div class="stats-container">
           <div class="stat-item" v-for="(stat, index) in stats" :key="index">
@@ -97,7 +100,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
 
     <!-- 联系我们 -->
     <div class="section contact-section">
@@ -109,19 +112,19 @@
           <div class="contact-info">
             <div class="contact-item">
               <i class="fas fa-map-marker-alt"></i>
-              <span>内蒙古自治区呼和浩特市</span>
+              <span>美国旧金山</span>
             </div>
             <div class="contact-item">
               <i class="fas fa-phone"></i>
-              <span>400-123-4567</span>
+              <span>000-000-000</span>
             </div>
             <div class="contact-item">
               <i class="fas fa-envelope"></i>
-              <span>contact@nmgmcn.com</span>
+              <span>x844650@gmail.com</span>
             </div>
           </div>
           
-          <div class="contact-form">
+          <!-- <div class="contact-form">
             <el-form>
               <el-form-item>
                 <el-input placeholder="您的姓名"></el-input>
@@ -139,7 +142,7 @@
                 <el-button type="primary">提交</el-button>
               </el-form-item>
             </el-form>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
@@ -151,42 +154,42 @@ import { ref } from 'vue'
 
 const services = ref([
   {
-    title: '网红孵化',
+    title: '产后护理',
     icon: 'fas fa-user-friends',
-    description: '发掘和培养呼和浩特本地有潜力的抖音达人，打造专业同城探店KOL团队。'
+    description: '科学指导产妇营养、恢复体力与心理调适，确保母亲健康。'
   },
   {
-    title: '内容策划',
+    title: '新生儿护理',
     icon: 'fas fa-lightbulb',
-    description: '为呼市商家量身定制抖音同城探店内容，打造爆款视频，提升品牌曝光度。'
+    description: '包括喂养、洗护、睡眠管理及早期感统发展，帮助宝宝健康成长。'
   },
+  // {
+  //   title: '营养餐饮',
+  //   icon: 'fas fa-hand-holding-usd',
+  //   description: '根据妈妈产后体质与宝宝需求，提供科学配餐方案。'
+  // },
   {
-    title: '商业变现',
-    icon: 'fas fa-hand-holding-usd',
-    description: '连接呼市商家与本地KOL资源，实现线上引流到线下消费的高效转化。'
-  },
-  {
-    title: '平台运营',
+    title: '个性化服务',
     icon: 'fas fa-chart-line',
-    description: '专业的抖音账号运营和数据分析，提升呼市商家在同城页面的曝光和影响力。'
+    description: '根据家庭需求，安排专属月嫂，为每位妈妈和宝宝提供温暖、细致的护理。'
   },
-  {
-    title: '品牌推广',
-    icon: 'fas fa-bullhorn',
-    description: '为呼和浩特本地商家提供全方位抖音品牌营销方案，精准触达目标消费者。'
-  },
-  {
-    title: '活动策划',
-    icon: 'fas fa-calendar-alt',
-    description: '策划和执行呼市商家线上线下联动活动，增强用户互动和品牌曝光。'
-  }
+  // {
+  //   title: '品牌推广',
+  //   icon: 'fas fa-bullhorn',
+  //   description: '为呼和浩特本地商家提供全方位抖音品牌营销方案，精准触达目标消费者。'
+  // },
+  // {
+  //   title: '活动策划',
+  //   icon: 'fas fa-calendar-alt',
+  //   description: '策划和执行呼市商家线上线下联动活动，增强用户互动和品牌曝光。'
+  // }
 ])
 
 const stats = ref([
-  { number: '100+', title: '签约艺人' },
-  { number: '500+', title: '合作商家' },
-  { number: '1000万+', title: '粉丝覆盖' },
-  { number: '5年+', title: '行业经验' }
+  // { number: '100+', title: '签约艺人' },
+  // { number: '500+', title: '合作商家' },
+  // { number: '1000万+', title: '粉丝覆盖' },
+  // { number: '5年+', title: '行业经验' }
 ])
 </script>
 

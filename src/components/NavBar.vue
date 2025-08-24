@@ -10,7 +10,7 @@
     >
       <div class="logo-container">
         <router-link to="/">
-          <h1 class="logo-text">默默文化传媒</h1>
+          <h1 class="logo-text">Tadpolemama 母婴</h1>
         </router-link>
         <div class="menu-toggle" @click="toggleMenu" v-if="isMobile">
           <i :class="isMenuOpen ? 'fas fa-times' : 'fas fa-bars'"></i>
@@ -19,9 +19,9 @@
       <div class="menu-items" :class="{ 'mobile': isMobile, 'open': isMenuOpen }">
         <el-menu-item index="/">首页</el-menu-item>
         <el-menu-item index="/about">关于我们</el-menu-item>
-        <el-menu-item index="/services">服务内容</el-menu-item>
+        <el-menu-item index="/services">Tadpolemama月子中心</el-menu-item>
         <el-menu-item index="/cases">案例展示</el-menu-item>
-        <el-menu-item index="/talents">艺人资源</el-menu-item>
+        <el-menu-item index="/talents">Tadpole doula月嫂平台</el-menu-item>
         <el-menu-item index="/contact">联系我们</el-menu-item>
       </div>
     </el-menu>
